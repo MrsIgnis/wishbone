@@ -41,6 +41,7 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    font-family: "Poppins", sans-serif;
 }
 
 input,
@@ -55,6 +56,11 @@ input::-ms-clear {
 
 button {
     cursor: pointer;
+    padding: 11px 20px;
+    border-radius: 14px;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
 }
 
 button::-moz-focus-inner {
@@ -73,6 +79,7 @@ a:hover {
 
 ul li {
     list-style: none;
+    cursor: pointer;
 }
 
 img {
@@ -89,5 +96,101 @@ h6 {
     font-weight: 400;
 }
 
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 70.4px;
+    color: #1B1A1A;
+    margin: 20px 0 18px 0;
+}
+
 /* -------------------------------- */
 
+.flex {
+    display: flex;
+}
+
+/* -------------------------------- */
+
+/* Шапка */
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 11px 11px 25px 0px #0907250F;
+}
+
+.header_inner {
+    padding: 20px 20px 20px 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav {
+    display: flex;
+    gap: 31px;
+}
+
+.footer_ul {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.footer_btn {
+    background-color: #1B1A1A;
+    color: #FFFFFF;
+}
+
+/* -------------------------------- */
+/* Блок "hero" */
+
+#hero {
+    background-color: #ECE7E4;
+}
+
+.hero_inner {
+    margin: 77px 60px;
+    padding: 60px 51px 40px 40px;
+}
+
+.hero_logo_text {
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #645C55;
+}
+
+.hero_text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #403E3B;
+}
+
+.hero_btn {
+    box-shadow: 0px 0px 0px 0px #1B1A1A;
+    color: #1B1A1A;
+    background-color: transparent;
+    margin-top: 30px;
+}
